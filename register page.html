@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        border-radius: 50px;
+    }
+    body{
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-image: url(img/back.JPG);
+        background-size: cover;
+    }
+    nav{
+	position: fixed;
+	width: 100vw;
+	height: 60px;
+	border-top: .5rem solid var(--primary-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55px;
+	width: 15%;
+	font-weight: 700;
+	background: var(--primary-color);
+}
+
+.logo::before{
+	content: "Get";
+	color:red;
+}
+.logo::after{
+	content: "Fit";
+	color:white;
+}
+
+ul{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	color: var(--primary-color);
+}
+</style>
+<body>
+    <font color="white">
+    <center>
+
+        <header>
+            <nav>
+                <h2 class="logo"></h2>
+                <ul>
+                    <a href="#"><li>Sign-in</li></a>
+                    <a href="#"><li>Create Acoount</li></a>
+                    <a type="text" onclick="alert('Contact Us: getfit456@gmail.com <br> lovely professional university, phagwara<br>punjab, 144411<br>9146598372, 9985625425')"><li>Contact</li></a>
+                </ul>
+            </nav>
+
+            <br><br>
+            <br>
+
+    <form action="index.html" method="post" autocomplete="off">
+        <fieldset>
+            <level for="lname">First Name</level>
+            <input type="text" id="name" fname="name" required>
+            <br><br>
+      
+        <level for="lname">Last Name</level>
+        <input type="text" id="lname" lname="lname" required>
+        <br><br>
+      
+        <level for="email">Email</level>
+        <input type="email" id="email" email="email"  required placeholder="abc@gmail.com">
+        <br><br>
+      
+        <level for="password">Create password</level>
+        <input type="password" id="password" required >
+        <br><br>
+        <level for="password">Confirm password</level>
+        <input type="password" id="password" required >
+      
+        <br><br>
+        
+      
+        <label>Body Type</label>
+      <select>
+        <option value="Select option">Select Option</option>
+        <option value="Endomorph">Endomorph</option>
+        <option value="Mesomorph">Mesomorph</option>
+        <option value="Ectomorph">Ectomorph</option>
+      </select>
+
+
+    <br><br>
+
+    <label>Gender</label>
+      <select>
+        <option value="Select option">Select Option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <br><br>
+
+      <input type="submit" value="Log-In">
+
+<br><br>
+
+<br><br>
+</a>
+
+</font>
+</center>
+</body>
+</html>
